@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+}
+
+.top-pane{
+    background-color: hsl(225, 6%, 25%);
+}
+
+ .pane{
+    height: 60vh;
+    display: flex;
+}
+
+.editor-container{
+    flex-grow: 1; 
+     flex-basis: 0; /* so that all the three are of same size */
+     width: 30%;
+     display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background-color: hsl(225, 6%, 25%);
+} 
+
+@media (max-width: 800px) {
+    .top-pane {
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .editor-container{
+        width: 100%;
+       height: 30%;
+    }
+}
+
+
+.editor-title{
+    background-color: hsl(225, 6%, 13%);
+    color: white;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.CodeMirror{
+    height: 100% !important;
+    
+}
+
+.CodeMirror-vscrollbar {
+  
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.code-mirror-wrapper{
+    flex-grow: 1;
+    /* border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem; */
+    overflow: hidden;
+}
+
+.logo-h{
+    padding: 1px;
+    font-size: 1.5rem;
+    color: rgb(229, 21, 21);
+}
+
+.logo-css{
+    padding: 1px;
+    font-size: 1.5rem;
+    color: rgb(39, 153, 247);
+}
+
+.logo-js{
+    padding: 1px;
+    font-size: 1.5rem;
+    color: rgb(211, 230, 42);
+}
+
+.home-btn{
+    display: flex;
+    
+    background-color: hsl(225, 6%, 25%)
+  }
+
+  .btn{
+    text-align: center;
+    margin-left: 20px;
+  }
